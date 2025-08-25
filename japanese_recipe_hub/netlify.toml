@@ -1,0 +1,4 @@
+[build]
+  base = "japanese_recipe_hub"
+  publish = "dist"
+  command = "npm run build"
