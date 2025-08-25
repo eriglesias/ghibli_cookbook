@@ -1,0 +1,57 @@
+:root {
+  --ghibli-bg: #f4ece2;        /* Warm parchment */
+  --ghibli-border: #c8a97e;    /* Soft sand */
+  --ghibli-text: #5a4632;      /* Deep wood */
+  --ghibli-focus: #a89f91;     /* Pale moss */
+  --animation-duration: 4s;
+}
+
+.searchContainer {
+  background: var(--ghibli-bg);
+  padding: 0.2rem;
+  border-radius: 1.5rem;
+  border: 2px solid var(--ghibli-border);
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(90, 70, 50, 0.1);
+  position: relative;
+  overflow: hidden;
+  animation: driftLeaves var(--animation-duration) infinite ease-in-out;
+}
+
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: var(--ghibli-text);
+  background: transparent;
+  padding: 0.5rem;
+  font-family: 'Palatino Linotype', serif;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(90, 70, 50, 0.5);
+  font-style: italic;
+}
+
+.search-input:focus {
+  background: rgba(168, 159, 145, 0.2);
+  box-shadow: 0 0 8px var(--ghibli-focus);
+  border-radius: 1rem;
+}
+
+.loading {
+  font-size: 0.875rem;
+  color: var(--ghibli-text);
+  margin-left: 0.5rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Gentle pulsing to suggest breath or spirit */
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%      { opacity: 1;   transform: scale(1.05); }
+}

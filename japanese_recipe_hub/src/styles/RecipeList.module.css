@@ -1,0 +1,49 @@
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  display: block;
+  
+}
+
+.title h2 {
+  margin: 0;
+  color: #375474;
+  
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.search-container {
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.filter {
+    margin: 0;
+    text-align: right;
+    color: #4a2c2a;
+}
+
+.recipe_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
+  padding: 15px;
+  /*background-color: #375474; blue background*/ 
+  background-color: white; 
+  /*border: black dashed;*/
+}
+
+.loading {
+  text-align: center;
+  color: #6b4e31;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}

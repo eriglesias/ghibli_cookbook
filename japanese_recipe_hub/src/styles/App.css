@@ -1,0 +1,49 @@
+/* app-wide defaults*/
+
+body {
+  background-color: #ffffff;
+ 
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  border: #100c08 solid;
+
+
+}
+
+h3{
+  font-size: 22px;
+  color: #100c08 ;
+}
+
+
+.card {
+  padding: 2em;
+  display: flex;
+}
+
+.recipe_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.loading {
+  text-align: center;
+  color: #6b4e31; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  background: #fff8e1; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

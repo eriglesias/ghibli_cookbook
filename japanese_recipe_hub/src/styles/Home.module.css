@@ -1,0 +1,65 @@
+.home {
+  padding: 2rem;
+  text-align: center;
+  background: #faf7f2; /* soft paper-like */
+  min-height: 100vh;
+}
+
+.header h2 {
+  font-family: 'GhibliFont', serif; /* or a hand-written style */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ascii_art {
+
+  margin-left: 400px;
+  width: 300px;
+  height: 300px;
+  justify-content: center;    
+  margin-bottom: 220px;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: #6b705c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff8f0;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.cardVideo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}

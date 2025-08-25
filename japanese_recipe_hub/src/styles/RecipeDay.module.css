@@ -1,0 +1,109 @@
+.container {
+  background: linear-gradient(135deg, #F5E8C7 0%, #E8F5E9 100%); /* Gradient from cream to soft green */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(212, 160, 23, 0.2); /* Warm shadow with a golden tint */
+  margin: 1rem auto;
+  max-width: 800px;
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.title {
+  color: #2E4057; 
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.5rem; 
+  margin: 0;
+  
+}
+
+
+.goHome {
+  background-color: #D4A017; 
+  color: #F5E8C7; 
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px; 
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.goHome:hover {
+  background-color: #E8B84A; 
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.newRecipe {
+  background-color: #D4A017; 
+  color: #F5E8C7; 
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px; 
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.newRecipe:hover {
+  background-color: #E8B84A; 
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.ascii {
+  color: purple;
+  margin-bottom: 100px;
+ 
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+.loading {
+  color: #2E4057;
+  font-style: italic;
+  font-size: 1.1rem;
+  animation: pulse 1.5s infinite; 
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.noRecipe {
+  color: #2E4057;
+  padding: 1rem;
+  font-style: italic;
+  font-size: 1.1rem;
+}

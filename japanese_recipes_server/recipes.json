@@ -1,0 +1,363 @@
+[
+ {
+  "id": 1,
+  "name": "Tonkatsu/Breaded Pork Cutlet",
+  "name_jap": "豚カツ",
+  "region": "Tokyo",
+  "category": "main-dish",
+  "prepTime": 15,
+  "cookTime": 5,
+  "servings": 4,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "pork cutlets", "amount": "4", "note": "1.5-2cm thick" },
+    { "name": "salt", "amount": "2 pinches", "note": "" },
+    { "name": "pepper", "amount": "", "note": "" },
+    { "name": "oil", "amount": "", "note": "for frying" },
+    { "name": "all-purpose flour", "amount": "2 tbs", "note": "" },
+    { "name": "tonkatsu sauce", "amount": "", "note": "for breading 2tbs flour + 3 tbbs water" },
+    { "name": "water", "amount": "", "note": "" },
+    { "name": "panko breadcrumbs", "amount": "50gr", "note": "" }
+  ],
+  "instructions": [
+    { "step": 1, "description": "Take the pork out of the refrigerator 30 minutes before cooking. Season each piece with the salt and pepper on both sides." },
+    { "step": 2, "description": "Prepare three plates for breading: one with the flour, one with the flour and water mixed, and one with the panko breadcrumbs, and arrange them in that order"},
+    { "step": 3, "description": "Dip each piece of pork in the flour plate, then in the flour-water mixture, and finally in the panko, pressing the meat lightly with your hand to make the panko stick." },
+    {"step": 4 , "description": "In a large frying pan (the pieces of meat must not overlap; cook in two batches if needed), heat 3 cm (1¼ inches) of frying oil to 180°C (355°F). Fry the pork for 2 minutes on one side, turn over, and cook for another 3 minutes, until the meat is nicely golden brown. When the bubbles around the meat become smaller, it means the pork is cooked"},
+    {"step": 5, "description": "Drain on paper towels and leave to rest for 3 minutes before serving with tonkatsu sauce and finely chopped cabbage or coleslaw." }
+
+  ],
+  "tags": ["quick", "protein-rich", "family-friendly"],
+  "image": "/assets/tonkatsu_gs.png",
+  "culturalNotes": "Traditional preparation method...",
+  "additionalNotes": " To replace the tonkatsu sauce: Heat 4 tablespoons Worcestershire sauce, 2 tablespoons ketchup, 1 tablespoon mirin, and ½ teaspoon soy sauce in a small saucepan over low heat and stir until the sauce thickens. "
+},
+{
+  "id": 2,
+  "name": "Japanese Curry",
+  "name_jap": "ルーから作るカレー",
+  "region": "Yokosuka, Kanagawa",
+  "category": "main-dish",
+  "prepTime": 20,
+  "cookTime": 60,
+  "servings": 4,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "neutral oil", "amount": "2 tablespoons", "note": "" },
+    { "name": "boneless chicken thighs", "amount": "2 thighs", "note": "cut into bite-sized pieces" },
+    { "name": "onions", "amount": "2", "note": "finely chopped" },
+    { "name": "garlic clove", "amount": "1", "note": "chopped" },
+    { "name": "celery stalk", "amount": "1", "note": "finely chopped" },
+    { "name": "carrot", "amount": "1", "note": "grated" },
+    { "name": "apple", "amount": "1", "note": "finely chopped or grated" },
+    { "name": "curry powder", "amount": "3 tablespoons", "note": "" },
+    { "name": "crushed tomatoes", "amount": "240 ml", "note": "" },
+    { "name": "all-purpose flour", "amount": "4 tablespoons", "note": "" },
+    { "name": "dashi or chicken stock", "amount": "600 ml", "note": "" },
+    { "name": "potatoes", "amount": "2", "note": "peeled and quartered" },
+    { "name": "fresh ginger", "amount": "3 cm", "note": "peeled and chopped" },
+    { "name": "eggplant", "amount": "1/2", "note": "cut into large cubes" },
+    { "name": "zucchini", "amount": "1/2", "note": "cut into 1-cm slices" },
+    { "name": "bell pepper", "amount": "1/2", "note": "cut into strips" },
+    { "name": "oil", "amount": "", "note": "for frying" },
+    { "name": "rice", "amount": "4 portions", "note": "cooked"},
+    { "name": "green beans", "amount": "8", "note": "stem end removed" },
+    { "name": "Worcestershire or tonkatsu sauce", "amount": "1 tablespoon", "note": "" },
+    { "name": "malted or nutritional yeast", "amount": "1 tablespoon", "note": "" },
+    { "name": "soy sauce", "amount": "1 tablespoon", "note": "" },
+    { "name": "salt", "amount": "2-3 teaspoons", "note": "" }
+
+  ],
+  "instructions": [
+    { "step": 1, "description": "Heat 1 tablespoon of oil in a deep frying pan over medium heat. Add chicken pieces, skin-side down, and cook for 1 minute each side." },
+    { "step": 2, "description": "Remove chicken. Add remaining oil, onions, garlic, and ginger. Fry until golden and caramelized. Add celery, carrot, and apple, and cook for 10 minutes." },
+    { "step": 3, "description": "Remove from heat, stir in curry powder, and mix well. Return to heat, add tomatoes and simmer for 2 minutes. Stir in flour, cook for 1-2 minutes, then gradually add dashi or stock." },
+    { "step": 4, "description": "Add chicken, potatoes, and seasoning (Worcestershire sauce, yeast, soy sauce, salt). Simmer for 20 minutes over medium-low heat." },
+    { "step": 5, "description": "Cut eggplant into large cubes, zucchini into 1-cm slices, pepper into strips, and trim beans. Fry in 3 cm of oil at 180°C until golden." },
+    { "step": 6, "description": "Divide rice onto four plates, add curry, and top with fried vegetables." }
+
+  ],
+  "tags": ["comfort food", "spicy", "family-friendly"],
+  "image": "/assets/chicken_curry_gs.png",
+  "culturalNotes": "Traditional preparation method...",
+  "additionalNotes": " To replace the tonkatsu sauce: Heat 4 tablespoons Worcestershire sauce, 2 tablespoons ketchup, 1 tablespoon mirin, and ½ teaspoon soy sauce in a small saucepan over low heat and stir until the sauce thickens. "
+},{
+  "id": 3,
+  "name": "Okonomiyaki/Japanese Pancake",
+  "name_jap": "お好み焼き",
+  "region": "Osaka",
+  "category": "main-dish",
+  "prepTime": 15,
+  "cookTime": 10,
+  "servings": 4,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "cabbage", "amount": "200g", "note": "7oz" },
+    { "name": "scallions", "amount": "2", "note": "" },
+    { "name": "yam or potato", "amount": "100g", "note": "" },
+    { "name": "water", "amount": "200ml", "note": "7fl oz" },
+    { "name": "eggs", "amount": "2", "note": "" },
+    { "name": "all-purpose flour", "amount": "200g", "note": "all-purpose flour" },
+    { "name": "salt", "amount": "1/2 teaspoon", "note": "" },
+    { "name": "katsuobushi", "amount": "1 handful", "note": "dried bonito flakes" },
+    { "name": "sunflower oil", "amount": "4 tbsp", "note": "" }
+
+  ],
+  "instructions": [
+    { "step": 1, "description": "Cut the cabbage into thin strips and scallions into thin rounds." },
+    { "step": 2, "description": "grate the yam" },
+    { "step": 3, "description": "mix in a bowl the grated yam, water and egss" },
+    { "step": 4, "description": "add the flour and salt and mix." },
+    { "step": 5, "description": "stir in the cabbage, scalions and katsuobushi (crumbled between your fingers" },
+    { "step": 6, "description": "heat a frying pan and put 1 table spoon oil." },
+    { "step": 7, "description": "pour a quarter of the batter into the hot pan, cook about 3 minutes. Turn the okonomiyaki over, cover, and cook for 5 minutes. Flip it back and cook, until the bottom is a light golden brown. Repeat the process until all the batter is used" }
+
+  ],
+  "tags": ["comfort food", "spicy", "family-friendly"],
+  "image": "/assets/okonomiyaki_gs.png",
+  "culturalnotes": "Traditional preparation method...",
+  "additionalnotes": " To replace the tonkatsu sauce: Heat 4 tablespoons Worcestershire sauce, 2 tablespoons ketchup, 1 tablespoon mirin, and ½ teaspoon soy sauce in a small saucepan over low heat and stir until the sauce thickens. "
+},
+{
+  "id": 4 ,
+  "name": "Oyaki / Grilled Vegetable Dumplings",
+  "name_jap": "おやき",
+  "region": "Nagano",
+  "category": "main-dish",
+  "prepTime": 30,
+  "Resting": 60,
+  "cookTime": 20,
+  "servings": 4,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "all-purpose flour", "amount": "190g", "note": "7oz" },
+    { "name": "potato starch", "amount": "10g", "note": "1/4 oz" },
+    { "name": "boiling water", "amount": "140ml", "note": "4 3/4 oz" },
+    { "name": "kabocha or red kuri squash", "amount": "200g", "note": "7oz" },
+    { "name": "potato starch", "amount": "1 tea spoon", "note": "for red kuri squash only" },
+    { "name": "soy sauce", "amount": "2 tbsp", "note": "" },
+    { "name": "raw sugar", "amount": "1 1/2 tbsp", "note": "" },
+    { "name": "salt", "amount": "1 pinch", "note": "" },
+    { "name": "walnuts", "amount": "15g", "note": "roughly chopped" },
+    { "name": "brown miso", "amount": "1tbsp", "note": "" },
+    { "name": "sake", "amount": "1tbsp", "note": "7oz" },
+    { "name": "mirin", "amount": "1tbsp", "note": "7oz" },
+    { "name": "eggplant", "amount": "1/2", "note": "" },
+    { "name": "shiitake mushrooms", "amount": "2 fresh", "note": "" },
+    { "name": "neutral oil", "amount": "1 1/2", "note": "" }
+
+  ],
+  "instructions": [
+    { "step": 1, "description": "Cut the cabbage into thin strips and scallions into thin rounds." },
+    { "step": 2, "description": "grate the yam" },
+    { "step": 3, "description": "mix in a bowl the grated yam, water and egss" },
+    { "step": 4, "description": "add the flour and salt and mix." },
+    { "step": 5, "description": "stir in the cabbage, scalions and katsuobushi (crumbled between your fingers" },
+    { "step": 6, "description": "heat a frying pan and put 1 table spoon oil." },
+    { "step": 7, "description": "pour a quarter of the batter into the hot pan, cook about 3 minutes. Turn the okonomiyaki over, cover, and cook for 5 minutes. Flip it back and cook, until the bottom is a light golden brown. Repeat the process until all the batter is used" }
+
+  ],
+  "tags": ["comfort food", "spicy", "family-friendly"],
+  "image": "/assets/oyaki_gs.png",
+  "culturalnotes": "Traditional preparation method...",
+  "additionalnotes": " To replace the tonkatsu sauce: Heat 4 tablespoons Worcestershire sauce, 2 tablespoons ketchup, 1 tablespoon mirin, and ½ teaspoon soy sauce in a small saucepan over low heat and stir until the sauce thickens. "
+},
+{
+  "id": 5,
+  "name": "Shoyu Ramen",
+  "name_jap": "醤油ラーメン",
+  "region": "Tokyo",
+  "category": "main-dish",
+  "prepTime": 15,
+  "cookTime": 5,
+  "servings": 4,
+  "difficulty": "intermediate",
+  "ingredients": [
+    { "name": "meat broth", "amount": "1.6 liters", "note": "6½ cups" },
+    { "name": "cha-shu marinade", "amount": "180ml", "note": "¾ cup" },
+    { "name": "oyster sauce", "amount": "1 tbsp", "note": "" },
+    { "name": "malted/nutritional yeast", "amount": "2 tbsp", "note": "" },
+    { "name": "salt", "amount": "to taste", "note": "" },
+    { "name": "ramen noodles", "amount": "400g", "note": "14oz dried or 600g fresh" },
+    { "name": "bean sprouts", "amount": "2 handfuls", "note": "blanched" },
+    { "name": "ajitsuke tamago", "amount": "4", "note": "soft-boiled marinated eggs" },
+    { "name": "cha-shu pork", "amount": "8 slices", "note": "" },
+    { "name": "scallion", "amount": "1", "note": "thinly sliced" },
+    { "name": "nori", "amount": "½ sheet", "note": "cut into rectangles" },
+    { "name": "pepper", "amount": "to taste", "note": "" },
+    { "name": "ra-yu", "amount": "optional", "note": "chili oil" }
+  ],
+  "instructions": [
+    { "step": 1, "description": "Prepare soup: Combine broth, cha-shu marinade, oyster sauce, and yeast in saucepan. Heat over medium and season with salt." },
+    { "step": 2, "description": "Cook noodles in boiling water according to package instructions. Drain well." },
+    { "step": 3, "description": "Divide noodles among 4 bowls. Pour hot soup over noodles." },
+    { "step": 4, "description": "Add toppings: bean sprouts, halved eggs, pork slices, scallions, and nori." },
+    { "step": 5, "description": "Sprinkle with pepper and add ra-yu if desired. Serve immediately." }
+  ],
+  "tags": ["comfort food", "umami", "restaurant-style"],
+  "image": "/assets/ramen_gs.png",
+  "culturalnotes": "Tokyo-style shoyu ramen features clear brown broth with soy sauce base. First appeared in 1910 at Asakusa's 'Rairaiken'. The noodles are typically thin and curly.",
+  "additionalnotes": "For homemade noodles: Use kansui (alkaline water) for authentic texture. Substitute: Thin egg noodles. Save cha-shu marinade for seasoning rice or vegetables."
+},
+{
+  "id": 6,
+  "name": "Satsuki's Bento",
+  "name_jap": "さつきのお弁当",
+  "region": "Saitama",
+  "category": "lunch",
+  "prepTime": 30,
+  "cookTime": 20,
+  "servings": 1,
+  "difficulty": "intermediate",
+  "ingredients": [
+    { "name": "Japanese rice", "amount": "1 cup", "note": "cooked" },
+    { "name": "chicken karaage", "amount": "3-4 pieces", "note": "or teriyaki chicken" },
+    { "name": "tamagoyaki", "amount": "2 slices", "note": "Japanese rolled omelet" },
+    { "name": "edamame", "amount": "10 pods", "note": "steamed" },
+    { "name": "cherry tomatoes", "amount": "2-3", "note": "" },
+    { "name": "umeboshi", "amount": "1", "note": "pickled plum" },
+    { "name": "broccoli", "amount": "2 florets", "note": "blanched" },
+    { "name": "nori", "amount": "1 sheet", "note": "cut into strips" }
+  ],
+  "instructions": [
+    { "step": 1, "description": "Prepare all components: cook rice, make chicken karaage, prepare tamagoyaki, and steam vegetables." },
+    { "step": 2, "description": "Pack warm rice into bento box, pressing gently to form a base. Place umeboshi in center of rice." },
+    { "step": 3, "description": "Arrange chicken pieces in one section, tamagoyaki slices in another." },
+    { "step": 4, "description": "Fill remaining spaces with edamame, tomatoes, and broccoli for color balance." },
+    { "step": 5, "description": "Add nori strips as garnish or make a simple onigiri wrapped with nori." },
+    { "step": 6, "description": "Let cool completely before closing lid to prevent condensation." }
+  ],
+  "tags": ["kawaii", "balanced", "homemade"],
+  "image": "/assets/bento_gs.png",
+  "culturalnotes": "Japanese bento boxes are carefully arranged meals that balance taste, nutrition, and visual appeal. Mothers often prepare elaborate bento for their children.",
+  "additionalnotes": "For a Ghibli-inspired touch: Shape rice into characters using molds, or add a mini sausage octopus. Keep food at room temperature if eating within 4 hours."
+},
+{
+  "id": 7,
+  "name": "Onigiri",
+  "name_jap": "おにぎり",
+  "region": "Nara",
+  "category": "snack",
+  "prepTime": 10,
+  "cookTime": 20,
+  "servings": 4,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "Japanese short-grain rice", "amount": "2 cups", "note": "uncooked" },
+    { "name": "water", "amount": "2.5 cups", "note": "for cooking rice" },
+    { "name": "salt", "amount": "to taste", "note": "" },
+    { "name": "nori (dried seaweed)", "amount": "4 sheets", "note": "cut into strips" },
+    { "name": "filling (optional)", "amount": "as needed", "note": "e.g., umeboshi (pickled plum), salmon, tuna mayo, kombu tsukudani" }
+  ],
+  "instructions": [
+    { "step": 1, "description": "Rinse the rice until water runs clear, then cook in a rice cooker or pot with water." },
+    { "step": 2, "description": "Let the cooked rice cool slightly until handleable but still warm." },
+    { "step": 3, "description": "Wet hands with water and rub with a pinch of salt to prevent sticking." },
+    { "step": 4, "description": "Take a handful of rice, form a dent in the center, and add filling (if using)." },
+    { "step": 5, "description": "Shape into a triangle, ball, or cylinder by gently pressing with palms and fingers." },
+    { "step": 6, "description": "Wrap with a strip of nori or press nori onto the sides just before eating." }
+  ],
+  "tags": ["portable", "quick", "vegetarian-option"],
+  "image": "/assets/onigiri_gs.png",
+  "culturalnotes": "Onigiri is a staple Japanese comfort food, often homemade or sold in convenience stores. It’s traditionally wrapped with nori separately to keep it crisp.",
+  "additionalnotes": "For flavor variations: Mix rice with furikake (seasoning), or grill brushed with soy sauce for yaki-onigiri."
+},
+{
+  "id": 8,
+  "name": "Yakitori",
+  "name_jap": "焼き鳥",
+  "region": "Tokyo",
+  "category": "appetizer",
+  "prepTime": 20,
+  "cookTime": 15,
+  "servings": 4,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "chicken thighs", "amount": "500g", "note": "cut into bite-sized pieces" },
+    { "name": "scallions", "amount": "4", "note": "cut into 2-inch lengths" },
+    { "name": "soy sauce", "amount": "60ml", "note": "" },
+    { "name": "mirin", "amount": "60ml", "note": "" },
+    { "name": "sake", "amount": "30ml", "note": "or dry white wine" },
+    { "name": "sugar", "amount": "1 tbsp", "note": "" },
+    { "name": "salt", "amount": "to taste", "note": "" },
+    { "name": "bamboo skewers", "amount": "8-10", "note": "soaked in water for 30 mins" }
+  ],
+  "instructions": [
+    { "step": 1, "description": "Skewer chicken and scallions alternately onto bamboo skewers." },
+    { "step": 2, "description": "Combine soy sauce, mirin, sake, and sugar in a saucepan. Simmer for 5 mins to make tare (glaze)." },
+    { "step": 3, "description": "Grill skewers over medium-high heat, turning frequently, for 5 mins." },
+    { "step": 4, "description": "Brush with tare glaze and grill 2-3 more mins until caramelized." },
+    { "step": 5, "description": "Sprinkle with salt (optional) and serve hot." }
+  ],
+  "tags": ["grilled", "street-food", "party"],
+  "image": "/assets/yakitori_gs.png",
+  "culturalnotes": "Yakitori is a staple of Japanese izakayas (pubs), often paired with beer. Different cuts (e.g., liver, skin) are also popular.",
+  "additionalnotes": "For extra flavor, add a pinch of shichimi togarashi (Japanese chili blend) before serving."
+},
+{
+  "id": 9,
+  "name": "Brown Miso Soup",
+  "name_jap": "味噌",
+  "region": "Nagoya, Aichi",
+  "category": "main-dish",
+  "prepTime": 15,
+  "cookTime": 10,
+  "servings": 4,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "radish", "amount": "80g", "note": "white or black" },
+    { "name": "carrot", "amount": "1/3", "note": "" },
+    { "name": "onion", "amount": "1/4", "note": "" },
+    { "name": "zuchhini", "amount": "1/2", "note": "small one" },
+    { "name": "jerusalem artichoke or potato", "amount": "60g", "note": "" },
+    { "name": "mushrooms", "amount": "60g", "note": "" },
+    { "name": "vegetable oil", "amount": "1 teaspoon", "note": "" },
+    { "name": "fresh ginger", "amount": "3g", "note": "peeled and sliced" },
+    { "name": "dashi", "amount": "700 ml", "note": "" },
+    { "name": "brown miso", "amount": "3 tbsp", "note": "" }
+
+  ],
+  "instructions": [
+    { "step": 1, "description": "Peel the vegetable and cut them into bite-sized pieces." },
+    { "step": 2, "description": "Heat the oil and ginger in a saucepan over medium heat" },
+    { "step": 3, "description": "Add the vegetables and brown for 1 minute" },
+    { "step": 4, "description": "Pour in the dashi and simmer for 5 minutes, until the vegetables are tender" },
+    { "step": 5, "description": "Remove from the heat and mix in the miso" }
+  ],
+  "tags": ["comfort food", "spicy", "family-friendly"],
+  "image": "/assets/miso_soup_gs.png",
+  "culturalnotes": "Traditional preparation method...",
+  "additionalnotes": " To replace the tonkatsu sauce: Heat 4 tablespoons Worcestershire sauce, 2 tablespoons ketchup, 1 tablespoon mirin, and ½ teaspoon soy sauce in a small saucepan over low heat and stir until the sauce thickens. "
+},
+{
+  "id": 10,
+  "name": "Matcha Latte",
+  "name_jap": "抹茶ラテ",
+  "region": "Kyoto",
+  "category": "drink",
+  "prepTime": 5,
+  "cookTime": 5,
+  "servings": 1,
+  "difficulty": "beginner",
+  "ingredients": [
+    { "name": "matcha powder", "amount": "1 tsp", "note": "high-quality ceremonial grade" },
+    { "name": "hot water", "amount": "2 tbsp", "note": "about 80°C (176°F)" },
+    { "name": "milk", "amount": "200ml", "note": "dairy or plant-based" },
+    { "name": "sugar or honey", "amount": "to taste", "note": "optional" },
+    { "name": "ice cubes", "amount": "optional", "note": "for iced version" }
+  ],
+  "instructions": [
+    { "step": 1, "description": "Sift the matcha powder into a bowl to remove clumps." },
+    { "step": 2, "description": "Add hot water and whisk vigorously in a 'W' or 'M' motion until frothy (use a bamboo whisk if possible)." },
+    { "step": 3, "description": "Heat or froth the milk (stovetop or steamer) until warm and slightly foamy." },
+    { "step": 4, "description": "Pour the matcha mixture into a cup, then add the milk. Stir gently if needed." },
+    { "step": 5, "description": "Sweeten to taste and enjoy hot. For iced, pour over ice after step 3." }
+  ],
+  "tags": ["traditional", "refreshing", "vegan-option"],
+  "image": "/assets/matcha_gs.png",
+  "culturalnotes": "Matcha latte is a modern twist on traditional Japanese tea ceremonies, often enjoyed in cafés worldwide.",
+  "additionalnotes": "For a creamier texture, use oat or soy milk. Adjust matcha amount for stronger/weaker flavor."
+}
+
+]
+

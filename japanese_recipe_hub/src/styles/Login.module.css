@@ -1,0 +1,64 @@
+/* Login.module.css */
+
+.login {
+  background: linear-gradient(135deg, #F5E8C7 0%, #E8F5E9 70%, #D4A017 100%); 
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(212, 160, 23, 0.3); 
+  max-width: 400px;
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Indie Flower', cursive;
+  color: #2E4057; 
+  min-height: 500px; 
+}
+
+/* Title with Ghibli glow */
+.login h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 4px #E8B84A, 0 0 1em #D4A017; /* Golden glow */
+}
+
+/* Form container with ASCII-inspired overlay */
+.login::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(232, 184, 74, 0.1) 0%, rgba(245, 232, 199, 0.1) 50%, transparent 70%), /* Inspired by ASCII curves */
+              radial-gradient(circle at 80% 80%, rgba(212, 160, 23, 0.1) 0%, rgba(232, 245, 233, 0.1) 50%, transparent 70%);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* Form styling */
+.login form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input fields with organic look */
+.login input {
+  padding: 0.75rem;
+  border: 2px solid #D4A017; /* Golden border */
+  border-radius: 15px; /* Rounded edges */
+  background-color: rgba(245, 232, 199, 0.8); /* Semi-transparent parchment */
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.login input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #E8B84A; /* Glow on focus */
+  border-color: #E8B84A;
+}
+
