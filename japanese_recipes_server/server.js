@@ -152,6 +152,7 @@ app.post('/recipes/favorites', authenticateToken, async (req, res) => {
   }
   try {
     const db = await connectToDatabase();
+    const ids = possibleUserIds(req.user.userId);
     const existing = await db.collection('favorites').findOne({ userId: { $in: ids }, recipeId: id });
     if (existing) {
       await db.collection('favorites').deleteOne({ _id: existing._id });
