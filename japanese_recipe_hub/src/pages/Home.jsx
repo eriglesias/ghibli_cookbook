@@ -36,7 +36,7 @@ export default function Home({ username }) {
           <h3>Recipe List</h3>
           <p>Browse all the recipes</p>
           <video
-            src="http://localhost:3005/assets/recipe_list_animation.mp4"
+            src="https://ghibli-cookbook-server.onrender.com/assets/recipe_list_animation.mp4"
             autoPlay
             loop
             muted
@@ -49,7 +49,7 @@ export default function Home({ username }) {
           <h3>Favorites</h3>
           <p>Your saved recipes :)</p>
           <video
-            src="http://localhost:3005/assets/favorites_animation.mp4"
+            src="https://ghibli-cookbook-server.onrender.com/assets/favorites_animation.mp4"
             autoPlay
             loop
             muted
@@ -62,7 +62,7 @@ export default function Home({ username }) {
           <h3>Recipe of the Day</h3>
           <p>Get one randomly picked!</p>
            <video
-            src="http://localhost:3005/assets/recipe_day.mp4"
+            src="https://ghibli-cookbook-server.onrender.com/assets/recipe_day.mp4"
             autoPlay
             loop
             muted
@@ -74,7 +74,7 @@ export default function Home({ username }) {
           <h3>Recipe Detail</h3>
           <p>Explore one recipe in depth</p>
           <video
-            src="http://localhost:3005/assets/recipe_detail_animation.mp4"
+            src="https://ghibli-cookbook-server.onrender.com/assets/recipe_detail_animation.mp4"
             autoPlay
             loop
             muted
