@@ -9,6 +9,8 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Welcome from './pages/Welcome';
 import Home from './pages/Home';
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
@@ -18,11 +20,12 @@ const App = () => {
   useEffect(() => {
   setLoading(true);
   const token = localStorage.getItem('token');
+  
+  const recipesPromise = fetch(`${API_URL}/recipes`).then(r => r.json());
 
-  const recipesPromise = fetch('http://localhost:3005/recipes').then(r => r.json());
 
-  const favPromise = fetch('http://localhost:3005/recipes/favorites', {
-    headers: token ? { Authorization: `Bearer ${token}` } : {}
+  const favPromise = fetch(`${API_URL}/recipes/favorites`, {
+  headers: token ? { Authorization: `Bearer ${token}` } : {}
   })
     .then(async r => {
       if (!r.ok) return { favorites: [] };
@@ -53,7 +56,7 @@ const App = () => {
 
   const toggleFavorite = (id) => {
   const token = localStorage.getItem('token');
-  fetch('http://localhost:3005/recipes/favorites', {
+  fetch(`${API_URL}/recipes/favorites`, {
     method: 'POST',
     headers: { 
       'Content-Type': 'application/json',
