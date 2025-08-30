@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const app = express();
-const port = 3005;
+const port = process.env.PORT || 3005;
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
@@ -32,6 +32,10 @@ function possibleUserIds(userId) {
 
 
 // User collection
+
+app.get('/', (req,res) => {
+  res.send('Recipes API is running');
+});
 
 app.post('/users/signup', async (req, res) => {
   try {
@@ -265,6 +269,6 @@ function filterRecipes(recipes, query) {
 
 
 app.listen(port, () => {
-   console.log(`Server running on http://localhost:${port}`);
+   console.log(`Server running on  ${port}`);
 });
 
