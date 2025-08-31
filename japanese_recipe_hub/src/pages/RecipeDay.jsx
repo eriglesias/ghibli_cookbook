@@ -7,12 +7,12 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 const RecipeDay = ({ favorites, toggleFavorite }) => {
   const [currentRecipe, setCurrentRecipe] = useState(null);
-  const [loading, setLoading]         = useState(true);
+  const [loading, setLoading] = useState(true);
 
   const fetchRandom = async () => {
     setLoading(true);
     try {
-      const res  = await fetch(`${API_URL}/recipes/rando`);
+      const res  = await fetch(`${API_URL}/recipes/random`);
       if (!res.ok) throw new Error('Failed to fetch random recipe');
       const data = await res.json();
       setCurrentRecipe(data);
