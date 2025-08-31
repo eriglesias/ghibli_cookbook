@@ -5,7 +5,7 @@ import styles from '../styles/RecipeDetail.module.css';
 import RecipeTitle from '../components/RecipeTitle';
 import RecipeImage from '../components/RecipeImage';
 import RecipeTags from '../components/RecipeTags';
-
+const API_URL = import.meta.env.VITE_API_URL;
 const MotionDiv = motion.div;
 
 
@@ -18,7 +18,7 @@ const RecipeDetail = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:3005/recipes/${id}`).then((response) => {
+    fetch(`${API_URL}/recipes/${id}`).then((response) => {
       if (!response.ok) throw new Error('Network response was not ok');
       return response.json();
     })

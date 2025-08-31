@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import RecipeCard from '../components/RecipeCard';
 import styles from '../styles/RecipeDay.module.css';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const RecipeDay = ({ favorites, toggleFavorite }) => {
   const [currentRecipe, setCurrentRecipe] = useState(null);
@@ -11,7 +12,7 @@ const RecipeDay = ({ favorites, toggleFavorite }) => {
   const fetchRandom = async () => {
     setLoading(true);
     try {
-      const res  = await fetch('http://localhost:3005/recipes/random');
+      const res  = await fetch(`${API_URL}/recipes/rando`);
       if (!res.ok) throw new Error('Failed to fetch random recipe');
       const data = await res.json();
       setCurrentRecipe(data);
