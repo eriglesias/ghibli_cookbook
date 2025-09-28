@@ -147,13 +147,13 @@ app.get('/recipes/favorites', authenticateToken, async (req, res) => {
 
 app.post('/recipes/favorites', authenticateToken, async (req, res) => {
   const { id } = req.body;
-  if (typeof id !== 'number') {
-    return res.status(400).json({ error: 'Invalid recipe ID' });
+  if (typeof id !== 'number' || isNaN(id)) {
+    return res.status(400).json({ error: 'Invalid recipe ID. Must be a number' });
   }
   try {
     const db = await connectToDatabase();
-    const ids = possibleUserIds(req.user.userId);
-    const existing = await db.collection('favorites').findOne({ userId: { $in: ids }, recipeId: id });
+    const userId = String(req.user.userId);
+    const existing = await db.collection('favorites').findOne({ userId, recipeId: id });
     if (existing) {
       await db.collection('favorites').deleteOne({ _id: existing._id });
     } else {
