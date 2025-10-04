@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/SearchBar.module.css';
 
+const API_URL = import.meta.env.VITE_API_URL;
 
 
 const SearchBar = ({  setSearchResults }) => {
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
-
   useEffect(() => {
     const fetchData = async () => {
       // if query is empty, tell parent “no search”
@@ -18,7 +18,7 @@ const SearchBar = ({  setSearchResults }) => {
       setLoading(true);
       try {
         const resp = await fetch(
-          `http://localhost:3005/recipes/search?q=${encodeURIComponent(query)}`
+          `${API_URL}/recipes/search?q=${encodeURIComponent(query)}`
         );
         const data = await resp.json();
         setSearchResults(data);

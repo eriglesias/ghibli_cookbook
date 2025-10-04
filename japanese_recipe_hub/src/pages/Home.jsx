@@ -11,7 +11,17 @@ export default function Home({ username }) {
         </header> 
       
       <section className={styles.grid}>
-        <Link className={styles.card} to="/recipes">
+        <Link className={styles.card} 
+          to="/recipes"
+           onMouseEnter={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.play().catch(() => {}); 
+          }}
+          onMouseLeave={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.pause();
+          }}
+        >
           <h3>Recipe List</h3>
           <p>Browse all the recipes</p>
           <video
@@ -25,20 +35,39 @@ export default function Home({ username }) {
           />
         </Link>
 
-        <Link className={styles.card} to="/favorites">
+        <Link className={styles.card} to="/favorites"
+          onMouseEnter={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.play().catch(() => {}); 
+          }}
+          onMouseLeave={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.pause();
+          }}
+        >
           <h3>Favorites</h3>
           <p>Your saved recipes :)</p>
           <video
             src="https://ghibli-cookbook-server.onrender.com/assets/favorites_animation.mp4"
-            poster="https://ghibli-cookbook-server.onrender.com/assets/reciope_favorites.mp4"
+            poster="https://ghibli-cookbook-server.onrender.com/assets/recipe_favorites.png"
             loop
             muted
             playsInline
+            preload='none'
             className={styles.cardVideo} 
           />
          
         </Link>
-        <Link className={styles.card} to="/recipe-day">
+        <Link className={styles.card} to="/recipe-day"
+         onMouseEnter={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.play().catch(() => {}); 
+          }}
+          onMouseLeave={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.pause();
+          }}
+        >
           <h3>Recipe of the Day</h3>
           <p>Get one randomly picked!</p>
            <video
@@ -47,10 +76,20 @@ export default function Home({ username }) {
             loop
             muted
             playsInline
+            preload='none'
             className={styles.cardVideo} 
           />
         </Link>
-        <Link className={styles.card} to="/recipe/1">
+        <Link className={styles.card} to="/recipe/1"
+           onMouseEnter={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.play().catch(() => {}); 
+          }}
+          onMouseLeave={(e) => {
+            const video = e.currentTarget.querySelector('video');
+            if (video) video.pause();
+          }}
+        >
           <h3>Recipe Detail</h3>
           <p>Explore one recipe in depth</p>
           <video
@@ -59,7 +98,7 @@ export default function Home({ username }) {
             loop
             muted
             playsInline
-            autoPlay
+            preload='none'
             className={styles.cardVideo} 
           />
         </Link>

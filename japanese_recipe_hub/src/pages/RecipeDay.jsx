@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import RecipeCard from '../components/RecipeCard';
 import styles from '../styles/RecipeDay.module.css';
@@ -24,6 +24,8 @@ const RecipeDay = ({ favorites, toggleFavorite }) => {
     }
   };
 
+  /* configure loading and no recipe animation */
+
   useEffect(() => {
     fetchRandom();
   }, []);
@@ -38,7 +40,6 @@ const RecipeDay = ({ favorites, toggleFavorite }) => {
       <header className={styles.header}>
         <h1 className={styles.title}>Recipe of the Day</h1>
       </header>
-      <div className={styles.contentWrapper}>
         <div className={styles.recipeSection}>
             <div className={styles.cardWrapper}>
               {loading ? (
@@ -69,7 +70,7 @@ const RecipeDay = ({ favorites, toggleFavorite }) => {
         Try another!
       </button>
     </div>
-  </div>
+
 </motion.div>
   );
 };

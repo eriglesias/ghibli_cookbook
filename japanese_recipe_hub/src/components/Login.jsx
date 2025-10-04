@@ -36,7 +36,7 @@ const Login = ({ setUsername: setAppUsername }) => {
       localStorage.setItem('username', returnedUsername);
       localStorage.setItem('welcomeShown', 'true');
 
-      console.log('💾 Token stored:', !!localStorage.getItem('token'));
+      console.log(' Token stored:', !!localStorage.getItem('token'));
 
       // update App sate with logged-in username
       setAppUsername(returnedUsername);

@@ -26,44 +26,40 @@ const App = () => {
     setUsername('');
   }
   useEffect(() => {
-  setLoading(true);
   const token = localStorage.getItem('token');
-  
+  if (username && !token) return;
+  setLoading(true);
   const recipesPromise = fetch(`${API_URL}/recipes`).then(r => r.json());
-  console.log('Debug Token Info:')
-  console.log('Token exists', !!token)
-  console.log('Token length', token?.length)
-  console.log('Token preview:', token?.substring(0,50) + '...')
-  
-  const favPromise = fetch(`${API_URL}/recipes/favorites`, {
-  headers: token ? { Authorization: `Bearer ${token}` } : {}
-  })
-    .then(async r => {
-      if (!r.ok) return { favorites: [] };
-      const data = await r.json();
-      if (Array.isArray(data)) {
-        if (data.length && typeof data[0] === 'object' && data[0].id !== undefined) {
-          return { favorites: data.map(r => r.id) };
-        }
-        return { favorites: data };
-      } else if (data && data.favorites) {
-        return { favorites: data.favorites };
-      }
-      return { favorites: [] };
-    });
+   const favPromise = token
+    ? fetch(`${API_URL}/recipes/favorites`, {
+        headers: { Authorization: `Bearer ${token}` },
+      })
+        .then(async (r) => {
+          if (!r.ok) return { favorites: [] };
+          const data = await r.json();
+          if (Array.isArray(data)) {
+            if (data.length && typeof data[0] === 'object' && data[0].id !== undefined) {
+              return { favorites: data.map((r) => r.id) };
+            }
+            return { favorites: data };
+          } else if (data && data.favorites) {
+            return { favorites: data.favorites };
+          }
+          return { favorites: [] };
+        })
+    : Promise.resolve({ favorites: [] });
 
   Promise.all([recipesPromise, favPromise])
     .then(([recipeData, favoriteData]) => {
       setRecipes(recipeData);
       setFavorites(favoriteData.favorites || []);
-      setTimeout(() => setLoading(false), 2000);
+      setTimeout(() => setLoading(false), 6000);
     })
-    .catch(error => {
+    .catch((error) => {
       console.error('Error fetching data:', error);
       setLoading(false);
     });
-
-}, [username]); 
+  }, [username]);
 
   const toggleFavorite = (id) => {
   const token = localStorage.getItem('token');
@@ -83,7 +79,20 @@ const App = () => {
     .catch(error => console.error('Error:', error));
 };
 
-  if (loading) return <LoadingAnimation />;
+  if (loading) {
+    return (
+      <div
+        style={{
+          width: '100vw',
+          height: '100vh',
+          overflow: 'hidden',
+        }}
+        className={loading ? '' : 'fade-out'}
+      >
+        <LoadingAnimation />
+      </div>
+    );
+  }
   return (
     <Router>
       <header className="app-header">
