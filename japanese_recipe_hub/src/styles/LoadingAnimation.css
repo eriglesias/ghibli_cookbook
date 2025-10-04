@@ -1,0 +1,22 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;           
+  width: 50vw;
+  background: green;    
+}
+
+.loading-frame {
+  font-family: monospace;
+  font-size: 25px;         
+  line-height: 1.5;
+  color: black;           
+}
+
+
+/* subtle up-and-down floating */
+@keyframes floaty {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-15px); }
+}

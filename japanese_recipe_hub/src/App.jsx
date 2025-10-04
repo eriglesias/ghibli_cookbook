@@ -9,21 +9,32 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Welcome from './pages/Welcome';
 import Home from './pages/Home';
+import LoadingAnimation from './components/LoadingAnimation';
+import ProtectedRoute from './components/ProtectedRoute';
 const API_URL = import.meta.env.VITE_API_URL;
 
-
+//user to debug debugging pswd test123
 const App = () => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [favorites, setFavorites] = useState([]);
   const [username, setUsername] = useState(localStorage.getItem('username') || '');
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    localStorage.removeItem('welcomeShown');
+    setUsername('');
+  }
   useEffect(() => {
   setLoading(true);
   const token = localStorage.getItem('token');
   
   const recipesPromise = fetch(`${API_URL}/recipes`).then(r => r.json());
-
-
+  console.log('Debug Token Info:')
+  console.log('Token exists', !!token)
+  console.log('Token length', token?.length)
+  console.log('Token preview:', token?.substring(0,50) + '...')
+  
   const favPromise = fetch(`${API_URL}/recipes/favorites`, {
   headers: token ? { Authorization: `Bearer ${token}` } : {}
   })
@@ -45,7 +56,7 @@ const App = () => {
     .then(([recipeData, favoriteData]) => {
       setRecipes(recipeData);
       setFavorites(favoriteData.favorites || []);
-      setLoading(false);
+      setTimeout(() => setLoading(false), 2000);
     })
     .catch(error => {
       console.error('Error fetching data:', error);
@@ -72,21 +83,35 @@ const App = () => {
     .catch(error => console.error('Error:', error));
 };
 
-  if (loading) return <div className="loading">Loading...</div>;
+  if (loading) return <LoadingAnimation />;
   return (
     <Router>
-      <header className= "app-header">
-        <Link to="/">Welcome</Link>
-        <Link to="/home" style={{ marginLeft: 12 }}>Home</Link>
-        {username && <span style={{ marginLeft: 12 }}> Hello, {username}</span>}
-      </header>
+      <header className="app-header">
+        <div className="left">
+          <Link to="/">Welcome</Link>
+          <Link to="/home" style={{ marginLeft: 12}}>Home</Link>
+        </div>
+        
+        <div className="right">
+          {username ? (
+          <>
+            <button onClick={handleLogout}> Logout </button>
+          </>
+        ) : (
+          <>
+            <Link to="/login" style={{ marginLeft: 12 }}>Login</Link>
+            <Link to="/signup" style={{ marginLeft: 12 }}>Sign Up</Link>
+          </>
+        )}
+        </div>   
+    </header>
 
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/home" element={<Home username={username} />} />
         <Route path="recipes" element={<RecipeList recipes={recipes} favorites={favorites} toggleFavorite={toggleFavorite} />} />
         <Route path="/recipe/:id" element={<RecipeDetail />} />
-        <Route path="/favorites" element={<FavoritesList favorites={favorites} toggleFavorite={toggleFavorite} recipes={recipes} />} />
+        <Route path="/favorites" element={ <ProtectedRoute> <FavoritesList favorites={favorites} toggleFavorite={toggleFavorite} recipes={recipes} /> </ProtectedRoute>}/>
         <Route path="/recipe-day" element={<RecipeDay favorites={favorites} toggleFavorite={toggleFavorite} />} />
         <Route path="/login" element={<Login setUsername={setUsername} />}/>
         <Route path="/signup" element={<Signup setUsername={setUsername} />} />

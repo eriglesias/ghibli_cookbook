@@ -6,8 +6,8 @@
     background-color: #375474;
     border: 2px solid #4a2c2a;
     border-radius: 12px;
-    /*background: url('/assets/background.jpg'); */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*background: url('/assets/background.jpg');*/ 
+    box-shadow: 2px 2px 2px #BC002D;
     
 }
 
@@ -15,6 +15,11 @@
     color: #fdfdf1;
     border-bottom: 1px solid #231f20;
     padding-bottom: 5px;
+    text-align: left;
+}
+
+.recipe_summary p{
+  text-align: center;
 }
 
 .back_link {
@@ -27,7 +32,8 @@
 }
 
 ul {
-    list-style-type: none;
+    /*list-style-type: none;*/
+    text-align: left;
 
 }
 

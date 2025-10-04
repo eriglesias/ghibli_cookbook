@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../styles/Login.module.css';
-
+const API_URL = import.meta.env.VITE_API_URL;
 const Signup = ({ setUsername: setAppUsername }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +15,7 @@ const Signup = ({ setUsername: setAppUsername }) => {
     setSuccess(null);
 
     try {
-      const res = await fetch('http://localhost:3005/users/signup', {
+      const res = await fetch(`${API_URL}/users/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),

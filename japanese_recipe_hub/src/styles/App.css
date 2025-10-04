@@ -2,7 +2,6 @@
 
 body {
   background-color: #ffffff;
- 
 }
 
 #root {
@@ -12,13 +11,33 @@ body {
   text-align: center;
   background-color: white;
   border: #100c08 solid;
-
+  font-family: 'Noto Sans Jp';
 
 }
 
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  /*background-color: #f5f5f5;*/
+  background-color: #375474;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.app-header a {
+  color: whitesmoke;
+}
+
+.app-header button {
+  color: whitesmoke;
+}
+
 h3{
-  font-size: 22px;
+  font-size: 1.5rem;
   color: #100c08 ;
+  font-weight: 900;
 }
 
 
@@ -27,23 +46,13 @@ h3{
   display: flex;
 }
 
-.recipe_list {
+/*.recipe_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 20px;
-}
+  background-color: palegreen;
+}*/
 
-.loading {
-  text-align: center;
-  color: #6b4e31; 
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-  background: #fff8e1; 
-  font-family: 'Noto Sans JP', sans-serif; 
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+

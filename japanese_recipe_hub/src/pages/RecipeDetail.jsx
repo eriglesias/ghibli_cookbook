@@ -46,7 +46,7 @@ const RecipeDetail = () => {
       <Link to="/recipes" className={styles.back_link}>Back to Recipes</Link>
       <RecipeTitle name={recipe.name} name_jap={recipe.name_jap} />
       <RecipeImage src={recipe.image} alt={recipe.name} />
-      <div>
+      <div className={styles.recipe_summary}>
         <p>Region: {recipe.region}</p>
         <p>Serves: {recipe.servings}</p>
         <p>Prep: {recipe.prepTime}m</p>
