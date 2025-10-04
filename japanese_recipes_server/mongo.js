@@ -2,7 +2,16 @@ const { MongoClient } = require('mongodb');
 require('dotenv').config();
 
 const uri = process.env.MONGODB_URI;
-const client = new MongoClient(uri);
+
+// Configure the client with specific options to avoid write concern issues
+const client = new MongoClient(uri, {
+  // Override any problematic write concern settings
+  writeConcern: { w: 1, j: true },
+  // Add some additional stability options
+  maxPoolSize: 10,
+  serverSelectionTimeoutMS: 5000,
+  socketTimeoutMS: 45000,
+});
 
 async function connectToDatabase() {
   if (!global.db) {

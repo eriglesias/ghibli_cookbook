@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3005;
+const port = process.env.PORT ||3005;
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
@@ -153,7 +153,11 @@ app.post('/recipes/favorites', authenticateToken, async (req, res) => {
   try {
     const db = await connectToDatabase();
     const userId = String(req.user.userId);
-    const existing = await db.collection('favorites').findOne({ userId, recipeId: id });
+    const ids = possibleUserIds(req.user.userId);
+    const existing = await db.collection('favorites').findOne({ 
+      userId: { $in: ids }, 
+      recipeId: id 
+    });
     if (existing) {
       await db.collection('favorites').deleteOne({ _id: existing._id });
     } else {
