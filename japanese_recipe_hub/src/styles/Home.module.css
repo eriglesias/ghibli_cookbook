@@ -10,6 +10,7 @@
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
+  color: black;
 }
 
 span {
@@ -70,3 +71,32 @@ button {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.30);
 }
+
+
+@media screen and (min-width: 350px ) and (max-width: 600px) {
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.header h2 {
+  font-family: 'Noto Sans JP';
+  font-size: 1.72rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

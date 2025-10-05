@@ -1,6 +1,6 @@
-/* Login.module.css */
+/* Signup.module.css */
 
-.login {
+.signup {
   background: #375474;
   padding: 2rem;
   border-radius: 3px;
@@ -17,7 +17,7 @@
   background-image: url();
 }*/
 
-.login h2 {
+.signup h2 {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
@@ -26,7 +26,7 @@
   font-weight: 800;
 }
 
-.login form {
+.signup form {
   position: relative;
   z-index: 1;
   display: flex;
@@ -34,7 +34,7 @@
   gap: 2rem;
 }
 
-.login input {
+.signup input {
   padding: 0.75rem;
   border: 2px double #BC002D; 
   border-radius: 10px; 
@@ -43,7 +43,7 @@
   /*transition: all 0.3s ease;*/
 }
 
-.login button{
+.signup button{
   
   background-color: #E8B84A;
   font-weight: bold;
@@ -55,14 +55,14 @@
 
 @media screen and (width >= 375px ) {
 
-  .login h2 {
+  .signup h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 3rem;
   text-shadow: 1px 1px 2px #BC002D;
   text-transform: uppercase;
   font-weight: 800;
+  
 }
-
 
 }

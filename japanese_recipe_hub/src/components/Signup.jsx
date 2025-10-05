@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from '../styles/Login.module.css';
+import styles from '../styles/Signup.module.css';
 const API_URL = import.meta.env.VITE_API_URL;
 const Signup = ({ setUsername: setAppUsername }) => {
   const [username, setUsername] = useState('');
@@ -39,7 +39,7 @@ const Signup = ({ setUsername: setAppUsername }) => {
   };
 
   return (
-    <div className={styles.login}>
+    <div className={styles.signup}>
       <h2>Create an Account</h2>
       <form onSubmit={handleSignup}>
         <input

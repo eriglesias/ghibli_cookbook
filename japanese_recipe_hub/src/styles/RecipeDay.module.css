@@ -76,5 +76,26 @@
 
 /* Responsive design  */
 
+@media (min-width: 350px) and (max-width: 600px) {
+  .container {
+  background: linear-gradient(135deg, #a3c5e0 0%, #f1dbb6 100%);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2.5px 2.5px 1px 2px #BC002D;
+  margin: 2rem auto;
+  max-width: 350px;
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+  
+  
+}
+ 
+.header h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
 
+
+}
 

@@ -24,9 +24,7 @@ const RecipeList = ({recipes, favorites, toggleFavorite}) => {
   
   const regions = ['All', ...new Set(recipes.map(recipe => recipe.region))];
 
-  const filteredRecipes = filterRegion === 'All'
-    ? baseList
-    : baseList.filter(recipe => recipe.region === filterRegion);
+  const filteredRecipes = filterRegion === 'All' ? baseList : baseList.filter(recipe => recipe.region === filterRegion);
 
   return (
     <div>

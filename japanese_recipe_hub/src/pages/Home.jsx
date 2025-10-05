@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import { Link } from 'react-router-dom';
 import styles from '../styles/Home.module.css';
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 export default function Home({ username }) {
   return (
@@ -31,6 +32,7 @@ export default function Home({ username }) {
             muted
             playsInline
             preload='none'
+            autoPlay={isMobile}
             className={styles.cardVideo} 
           />
         </Link>
@@ -54,7 +56,8 @@ export default function Home({ username }) {
             muted
             playsInline
             preload='none'
-            className={styles.cardVideo} 
+            className={styles.cardVideo}
+            autoPlay={isMobile} 
           />
          
         </Link>
@@ -78,6 +81,7 @@ export default function Home({ username }) {
             playsInline
             preload='none'
             className={styles.cardVideo} 
+            autoPlay={isMobile}
           />
         </Link>
         <Link className={styles.card} to="/recipe/1"
@@ -100,6 +104,7 @@ export default function Home({ username }) {
             playsInline
             preload='none'
             className={styles.cardVideo} 
+            autoPlay={isMobile}
           />
         </Link>
       </section>
