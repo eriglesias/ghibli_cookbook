@@ -10,7 +10,7 @@ const Welcome = () => {
     // If we've already seen the welcome screen, go directly to home
     if (localStorage.getItem('welcomeShown')) {
       navigate('/home', { replace: true });
-      localStorage.setItem('welcomeShown', 'true');
+      /*localStorage.setItem('welcomeShown', 'true');*/
     }
   }, [navigate]);
 
