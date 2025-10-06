@@ -53,7 +53,7 @@ const App = () => {
     .then(([recipeData, favoriteData]) => {
       setRecipes(recipeData);
       setFavorites(favoriteData.favorites || []);
-      setTimeout(() => setLoading(false), 6000);
+      setLoading(false);
     })
     .catch((error) => {
       console.error('Error fetching data:', error);
@@ -102,15 +102,11 @@ const App = () => {
         </div>
         
         <div className="right">
-          {username ? (
-          <>
-            <button onClick={handleLogout}> Logout </button>
-          </>
-        ) : (
-          <>
-            <Link to="/login" style={{ marginLeft: 12 }}>Login</Link>
-            <Link to="/signup" style={{ marginLeft: 12 }}>Sign Up</Link>
-          </>
+          {username ? (<> <button onClick={handleLogout}> Logout </button></> ) : ( 
+            <>
+             <Link to="/login" style={{ marginLeft: 12 }}>Login</Link>
+             <Link to="/signup" style={{ marginLeft: 12 }}>Sign Up</Link>
+           </>
         )}
         </div>   
     </header>

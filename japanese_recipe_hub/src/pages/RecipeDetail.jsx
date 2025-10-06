@@ -1,3 +1,5 @@
+/* RecipeDetail.jsx*/
+
 import { useState, useEffect } from 'react';
 import { useParams, Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -37,7 +39,8 @@ const RecipeDetail = () => {
  if (!recipe) return <div className={styles.not_found}>Recipe not found</div>;
 
   return (
-    <MotionDiv
+    <div className={styles.recipe_wrapper}>
+      <MotionDiv
       className={styles.recipe_detail}
       initial={{ opacity: 0, scale: 0.95 }} 
       animate={{ opacity: 1, scale: 1 }}
@@ -73,6 +76,8 @@ const RecipeDetail = () => {
       </div>
       <RecipeTags tags={recipe.tags} />
     </MotionDiv>
+    </div>
+    
   );
 };
 

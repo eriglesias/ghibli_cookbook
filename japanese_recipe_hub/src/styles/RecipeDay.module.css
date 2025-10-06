@@ -1,72 +1,76 @@
+/* RecipeDay.module.css */
+
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(135deg, #a3c5e0 0%, #f1dbb6 100%);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 2.5px 2.5px 1px 2px #BC002D;
   margin: 2rem auto;
   max-width: 800px;
-  position: relative;
-  min-height: 400px;
+  width: 90%;
+  min-height: 60dvh; /* ✅ dynamic height for modern browsers */
+  box-sizing: border-box;
   overflow: hidden;
-  
 }
-
 
 .header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.header h1{
+.header h1 {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  color: #2E4057;
 }
 
 .title {
-  color: #2E4057; 
+  color: #2E4057;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 2.5rem; 
   margin: 0;
 }
-
 
 .recipeSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
-  min-width: 300px; 
+  width: 100%;
 }
 
 .cardWrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
   width: 100%;
+  margin-bottom: 1.5rem;
 }
 
-
 .newRecipe {
-  background-color: #E8B84A; 
-  color: whitesmoke; 
+  background-color: #E8B84A;
+  color: whitesmoke;
   padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 20px; 
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 1.2rem;
-  transition: all 0.3s ease; 
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  align-self: center; 
 }
 
 .newRecipe:hover {
-  background-color: #E8B84A; 
-  transform: scale(1.05); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+.loading, .noRecipe {
+  font-size: 1.2rem;
+  color: #2E4057;
+  text-align: center;
+  animation: pulse 1.5s infinite ease-in-out;
+}
 
 @keyframes pulse {
   0% { opacity: 1; }
@@ -74,28 +78,39 @@
   100% { opacity: 1; }
 }
 
-/* Responsive design  */
-
-@media (min-width: 350px) and (max-width: 600px) {
+/* ✅ Phones (portrait & landscape) */
+@media (max-width: 768px) {
   .container {
-  background: linear-gradient(135deg, #a3c5e0 0%, #f1dbb6 100%);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 2.5px 2.5px 1px 2px #BC002D;
-  margin: 2rem auto;
-  max-width: 350px;
-  position: relative;
-  min-height: 400px;
-  overflow: hidden;
-  
-  
-}
- 
-.header h1{
-  font-weight: bold;
-  font-size: 2rem;
-}
+    padding: 1.2rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 1.5px 1.5px 1px 1px #BC002D;
+    min-height: 70dvh;
+  }
 
+  .header h1 {
+    font-size: 1.8rem;
+  }
 
+  .newRecipe {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 16px;
+  }
 }
 
+/* ✅ Tablets (portrait & landscape) */
+@media (min-width: 769px) and (max-width: 1366px) {
+  .container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .newRecipe {
+    font-size: 1.05rem;
+  }
+}
