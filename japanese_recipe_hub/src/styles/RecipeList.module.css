@@ -208,3 +208,28 @@ select {
     font-size: 3rem; 
   }
 }
+
+@media (min-width: 1025px) {
+  .recipe_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .search-container {
+    max-width: 500px;
+    flex-grow: 0;
+  }
+}
