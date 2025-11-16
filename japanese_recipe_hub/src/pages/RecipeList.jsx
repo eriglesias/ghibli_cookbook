@@ -34,17 +34,22 @@ const RecipeList = ({recipes, favorites, toggleFavorite}) => {
       </div>
      
       <div className={styles.toolbar}>
-        <SearchBar initialRecipes={recipes} setSearchResults={setSearchResults}/>
         <div className={styles.filter}>
           <label>Filter by Region: </label>
-        <select value={filterRegion} onChange={(e) => setFilterRegion(e.target.value)}>
-          {regions.map(region => (
-            <option key={region} value={region}>{region}</option>
+            <select value={filterRegion} onChange={(e) => setFilterRegion(e.target.value)}>
+              {regions.map(region => (
+                <option key={region} value={region}>{region}</option>
           ))}
           </select>
         </div>
+
+        <div className={styles.searchContainer}>
+          <SearchBar initialRecipes={recipes} setSearchResults={setSearchResults}/>
+        </div>
       </div>
         
+
+
       <div className={styles.recipe_list}>
         {filteredRecipes.map(recipe => (
           <RecipeCard 
